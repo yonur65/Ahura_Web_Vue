@@ -103,13 +103,15 @@
   }
   
   body {
-    @apply bg-background text-foreground font-poppins;
+    @apply bg-background text-foreground;
+    font-family: 'Poppins', sans-serif;
     background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200"><defs><pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M 100 0 L 0 0 0 100" fill="none" stroke="%23D4AF37" stroke-width="0.5" opacity="0.03"/></pattern></defs><rect width="1200" height="1200" fill="%23121212"/><rect width="1200" height="1200" fill="url(%23grid)"/></svg>');
     background-attachment: fixed;
   }
   
   h1, h2, h3, h4, h5, h6 {
-    @apply font-playfair font-bold;
+    font-family: 'Playfair Display', serif;
+    @apply font-bold;
   }
   
   h1 {
@@ -123,6 +125,7 @@
   h3 {
     @apply text-2xl lg:text-3xl;
   }
+  
   button:not(:disabled),
   [role="button"]:not([aria-disabled="true"]),
   [type="button"]:not(:disabled),
@@ -135,9 +138,8 @@
     @apply cursor-pointer;
   }
   
-  /* Ahura Mind custom base styles */
   a {
-    @apply text-accent hover:text-gold transition-colors duration-300;
+    @apply text-accent transition-colors duration-300;
   }
   
   button {
@@ -146,24 +148,11 @@
 }
 
 @layer components {
-  /**
-   * Custom container utility that centers content and adds responsive padding.
-   *
-   * This overrides Tailwind's default container behavior to:
-   * - Auto-center content (mx-auto)
-   * - Add responsive horizontal padding
-   * - Set max-width for large screens
-   *
-   * Usage: <div className="container">...</div>
-   *
-   * For custom widths, use max-w-* utilities directly:
-   * <div className="max-w-6xl mx-auto px-4">...</div>
-   */
   .container {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 1rem; /* 16px - mobile padding */
+    padding-left: 1rem;
     padding-right: 1rem;
   }
 
@@ -172,7 +161,6 @@
     min-width: 0;
   }
   
-  /* Ahura Mind custom components */
   .glow-accent {
     @apply text-accent drop-shadow-lg;
     text-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
@@ -238,48 +226,47 @@
 
   @media (min-width: 640px) {
     .container {
-      padding-left: 1.5rem; /* 24px - tablet padding */
+      padding-left: 1.5rem;
       padding-right: 1.5rem;
     }
   }
 
   @media (min-width: 1024px) {
     .container {
-      padding-left: 2rem; /* 32px - desktop padding */
+      padding-left: 2rem;
       padding-right: 2rem;
-      max-width: 1280px; /* Standard content width */
+      max-width: 1280px;
     }
   }
 }
 
-/* Tailwind theme configuration for Ahura Mind */
 @layer utilities {
   .text-gold {
-    @apply text-[#D4AF37];
+    color: #D4AF37;
   }
   
   .text-charcoal {
-    @apply text-[#121212];
+    color: #121212;
   }
   
   .text-blue-ethereal {
-    @apply text-[#E0F7FA];
+    color: #E0F7FA;
   }
   
   .bg-gold {
-    @apply bg-[#D4AF37];
+    background-color: #D4AF37;
   }
   
   .bg-charcoal {
-    @apply bg-[#121212];
+    background-color: #121212;
   }
   
   .bg-blue-ethereal {
-    @apply bg-[#E0F7FA];
+    background-color: #E0F7FA;
   }
   
   .border-gold {
-    @apply border-[#D4AF37];
+    border-color: #D4AF37;
   }
   
   .shadow-glow {
@@ -291,9 +278,54 @@
   }
   
   .transition-smooth {
-    @apply transition-all duration-500 ease-out;
+    transition: all 0.5s ease-out;
   }
-}
+  
+  .hover-lift {
+    transition: all 0.3s ease;
+  }
+  
+  .hover-lift:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(212, 175, 55, 0.2);
+  }
+  
+  .font-playfair {
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .font-poppins {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .hover\:text-gold:hover {
+    color: #D4AF37;
+  }
+  
+  .hover\:text-blue-ethereal:hover {
+    color: #E0F7FA;
+  }
+  
+  .hover\:bg-gold:hover {
+    background-color: #D4AF37;
+  }
+  
+  .hover\:bg-blue-ethereal:hover {
+    background-color: #E0F7FA;
+  }
+  
+  .hover\:border-gold:hover {
+    border-color: #D4AF37;
+  }
+  
+  .hover\:text-charcoal:hover {
+    color: #121212;
+  }
+  
+  .hover\:bg-charcoal:hover {
+    background-color: #121212;
+  }
+  
   @keyframes shimmer {
     0% {
       background-position: -1000px 0;
@@ -348,18 +380,46 @@
     animation: slideUp 0.8s ease-out forwards;
   }
   
-  .stagger-1 { animation-delay: 0.1s; }
+   .stagger-1 { animation-delay: 0.1s; }
   .stagger-2 { animation-delay: 0.2s; }
   .stagger-3 { animation-delay: 0.3s; }
   .stagger-4 { animation-delay: 0.4s; }
   .stagger-5 { animation-delay: 0.5s; }
   
-  .hover-lift {
-    transition: all 0.3s ease;
+  .group-hover\:text-blue-ethereal:group-hover {
+    color: #E0F7FA;
   }
   
-  .hover-lift:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(212, 175, 55, 0.2);
+  .group-hover\:text-gold:group-hover {
+    color: #D4AF37;
+  }
+  
+  /* Arbitrary color utilities */
+  .text-\[\#E0F7FA\] {
+    color: #E0F7FA;
+  }
+  
+  .bg-\[\#E0F7FA\] {
+    background-color: #E0F7FA;
+  }
+  
+  .from-\[\#E0F7FA\] {
+    --tw-gradient-from: #E0F7FA var(--tw-gradient-from-position);
+    --tw-gradient-to: rgb(224 247 250 / 0) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  }
+  
+  .to-\[\#E0F7FA\] {
+    --tw-gradient-to: #E0F7FA var(--tw-gradient-to-position);
+  }
+  
+  .from-\[\#E0F7FA\]\/10 {
+    --tw-gradient-from: rgb(224 247 250 / 0.1) var(--tw-gradient-from-position);
+    --tw-gradient-to: rgb(224 247 250 / 0) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  }
+  
+  .to-\[\#E0F7FA\]\/10 {
+    --tw-gradient-to: rgb(224 247 250 / 0.1) var(--tw-gradient-to-position);
   }
 }

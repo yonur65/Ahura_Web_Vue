@@ -60,7 +60,7 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
                 <Link href="/services">
                   <a>
-                    <Button className="bg-gold text-charcoal hover:bg-blue-ethereal hover:text-charcoal px-8 py-6 text-lg font-poppins font-600 rounded-lg transition-all duration-300 shadow-glow hover:shadow-lg flex items-center gap-2">
+                    <Button className="bg-gold text-charcoal hover:bg-[#E0F7FA] hover:text-charcoal px-8 py-6 text-lg font-poppins font-600 rounded-lg transition-all duration-300 shadow-glow hover:shadow-lg flex items-center gap-2">
                       Explore Services
                       <ArrowRight size={20} />
                     </Button>
@@ -101,7 +101,7 @@ export default function Home() {
             {/* Value Props Grid */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* Card 1 */}
-              <div className="group p-8 rounded-lg bg-gradient-to-br from-gold/10 to-blue-ethereal/10 border border-gold/30 hover:border-gold/60 transition-all duration-300 hover:shadow-glow">
+              <div className="group p-8 rounded-lg bg-gradient-to-br from-gold/10 to-[#E0F7FA]/10 border border-gold/30 hover:border-gold/60 transition-all duration-300 hover:shadow-glow">
                 <div className="w-12 h-12 rounded-full bg-gold/20 flex items-center justify-center mb-4 group-hover:bg-gold/30 transition-colors">
                   <Brain className="text-gold" size={24} />
                 </div>
@@ -115,7 +115,7 @@ export default function Home() {
               </div>
 
               {/* Card 2 */}
-              <div className="group p-8 rounded-lg bg-gradient-to-br from-gold/10 to-blue-ethereal/10 border border-gold/30 hover:border-gold/60 transition-all duration-300 hover:shadow-glow">
+              <div className="group p-8 rounded-lg bg-gradient-to-br from-gold/10 to-[#E0F7FA]/10 border border-gold/30 hover:border-gold/60 transition-all duration-300 hover:shadow-glow">
                 <div className="w-12 h-12 rounded-full bg-gold/20 flex items-center justify-center mb-4 group-hover:bg-gold/30 transition-colors">
                   <Zap className="text-gold" size={24} />
                 </div>
@@ -129,7 +129,7 @@ export default function Home() {
               </div>
 
               {/* Card 3 */}
-              <div className="group p-8 rounded-lg bg-gradient-to-br from-gold/10 to-blue-ethereal/10 border border-gold/30 hover:border-gold/60 transition-all duration-300 hover:shadow-glow">
+              <div className="group p-8 rounded-lg bg-gradient-to-br from-gold/10 to-[#E0F7FA]/10 border border-gold/30 hover:border-gold/60 transition-all duration-300 hover:shadow-glow">
                 <div className="w-12 h-12 rounded-full bg-gold/20 flex items-center justify-center mb-4 group-hover:bg-gold/30 transition-colors">
                   <Rocket className="text-gold" size={24} />
                 </div>
@@ -182,7 +182,7 @@ export default function Home() {
                   key={idx}
                   className="p-6 rounded-lg bg-gold/5 border border-gold/20 hover:border-gold/50 transition-all duration-300 group"
                 >
-                  <h3 className="text-xl font-playfair font-bold text-gold mb-2 group-hover:text-blue-ethereal transition-colors">
+                  <h3 className="text-xl font-playfair font-bold text-gold mb-2 group-hover:text-[#E0F7FA] transition-colors">
                     {service.title}
                   </h3>
                   <p className="text-cream/70">{service.desc}</p>
@@ -194,7 +194,7 @@ export default function Home() {
             <div className="text-center">
               <Link href="/services">
                 <a>
-                  <Button className="bg-gold text-charcoal hover:bg-blue-ethereal px-8 py-4 font-poppins font-600 rounded-lg transition-all duration-300 shadow-glow">
+                  <Button className="bg-gold text-charcoal hover:bg-[#E0F7FA] px-8 py-4 font-poppins font-600 rounded-lg transition-all duration-300 shadow-glow">
                     View All Services
                     <ArrowRight size={18} className="ml-2" />
                   </Button>
@@ -205,7 +205,7 @@ export default function Home() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-24 bg-gradient-to-r from-gold/10 to-blue-ethereal/10 border-y border-gold/30 relative overflow-hidden">
+        <section className="py-24 bg-gradient-to-r from-gold/10 to-[#E0F7FA]/10 border-y border-gold/30 relative overflow-hidden">
           <div className="container relative z-10 text-center">
             <h2 className="text-4xl md:text-5xl font-playfair font-bold text-cream mb-6">
               Ready to Transform Your Vision?
@@ -216,7 +216,7 @@ export default function Home() {
             </p>
             <Link href="/contact">
               <a>
-                <Button className="bg-gold text-charcoal hover:bg-blue-ethereal px-10 py-6 text-lg font-poppins font-600 rounded-lg transition-all duration-300 shadow-glow hover:shadow-lg">
+                <Button className="bg-gold text-charcoal hover:bg-[#E0F7FA] px-10 py-6 text-lg font-poppins font-600 rounded-lg transition-all duration-300 shadow-glow hover:shadow-lg">
                   Start Your Journey
                   <ArrowRight size={20} className="ml-2" />
                 </Button>

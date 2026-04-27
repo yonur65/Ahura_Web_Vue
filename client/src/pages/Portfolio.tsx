@@ -104,7 +104,7 @@ export default function Portfolio() {
               {projects.map((project, idx) => (
                 <div
                   key={idx}
-                  className="group rounded-lg overflow-hidden bg-gradient-to-br from-gold/10 to-blue-ethereal/10 border border-gold/30 hover:border-gold/60 transition-all duration-300 hover:shadow-glow slide-up"
+                  className="group rounded-lg overflow-hidden bg-gradient-to-br from-gold/10 to-[#E0F7FA]/10 border border-gold/30 hover:border-gold/60 transition-all duration-300 hover:shadow-glow slide-up"
                   style={{ animationDelay: `${idx * 100}ms` }}
                 >
                   {/* Image */}
@@ -161,7 +161,7 @@ export default function Portfolio() {
         </section>
 
         {/* Stats Section */}
-        <section className="py-24 bg-gradient-to-r from-gold/10 to-blue-ethereal/10 border-y border-gold/30">
+        <section className="py-24 bg-gradient-to-r from-gold/10 to-[#E0F7FA]/10 border-y border-gold/30">
           <div className="container">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
               {[
@@ -189,7 +189,7 @@ export default function Portfolio() {
                 Featured Case Study
               </h2>
 
-              <div className="rounded-lg overflow-hidden bg-gradient-to-br from-gold/10 to-blue-ethereal/10 border border-gold/30 p-8">
+              <div className="rounded-lg overflow-hidden bg-gradient-to-br from-gold/10 to-[#E0F7FA]/10 border border-gold/30 p-8">
                 <div className="mb-6">
                   <h3 className="text-2xl font-playfair font-bold text-gold mb-2">
                     FinanceAI Platform: Revolutionizing Financial Analytics
@@ -234,7 +234,7 @@ export default function Portfolio() {
 
                 <Link href="/contact">
                   <a>
-                    <Button className="bg-gold text-charcoal hover:bg-blue-ethereal px-6 py-3 font-poppins font-600 rounded-lg transition-all duration-300 shadow-glow">
+                    <Button className="bg-gold text-charcoal hover:bg-[#E0F7FA] px-6 py-3 font-poppins font-600 rounded-lg transition-all duration-300 shadow-glow">
                       Discuss Your Project
                       <ArrowRight size={18} className="ml-2" />
                     </Button>
@@ -246,7 +246,7 @@ export default function Portfolio() {
         </section>
 
         {/* CTA */}
-        <section className="py-24 bg-gradient-to-r from-gold/10 to-blue-ethereal/10 border-t border-gold/30 text-center">
+        <section className="py-24 bg-gradient-to-r from-gold/10 to-[#E0F7FA]/10 border-t border-gold/30 text-center">
           <div className="container">
             <h2 className="text-4xl md:text-5xl font-playfair font-bold text-cream mb-6">
               Your Project Awaits
@@ -257,7 +257,7 @@ export default function Portfolio() {
             </p>
             <Link href="/contact">
               <a>
-                <Button className="bg-gold text-charcoal hover:bg-blue-ethereal px-10 py-6 text-lg font-poppins font-600 rounded-lg transition-all duration-300 shadow-glow">
+                <Button className="bg-gold text-charcoal hover:bg-[#E0F7FA] px-10 py-6 text-lg font-poppins font-600 rounded-lg transition-all duration-300 shadow-glow">
                   Start Your Project
                   <ArrowRight size={20} className="ml-2" />
                 </Button>

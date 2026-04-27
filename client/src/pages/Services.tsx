@@ -134,14 +134,14 @@ export default function Services() {
               {services.map((service, idx) => (
                 <div
                   key={idx}
-                  className="group p-8 rounded-lg bg-gradient-to-br from-gold/10 to-blue-ethereal/10 border border-gold/30 hover:border-gold/60 transition-all duration-300 hover:shadow-glow slide-up"
+                  className="group p-8 rounded-lg bg-gradient-to-br from-gold/10 to-[#E0F7FA]/10 border border-gold/30 hover:border-gold/60 transition-all duration-300 hover:shadow-glow slide-up"
                   style={{ animationDelay: `${idx * 100}ms` }}
                 >
                   {/* Icon */}
                   <div className="text-4xl mb-4">{service.icon}</div>
 
                   {/* Title */}
-                  <h3 className="text-2xl font-playfair font-bold text-gold mb-3 group-hover:text-blue-ethereal transition-colors">
+                  <h3 className="text-2xl font-playfair font-bold text-gold mb-3 group-hover:text-[#E0F7FA] transition-colors">
                     {service.title}
                   </h3>
 
@@ -179,7 +179,7 @@ export default function Services() {
         </section>
 
         {/* Why Choose Us */}
-        <section className="py-24 bg-gradient-to-r from-gold/10 to-blue-ethereal/10 border-y border-gold/30">
+        <section className="py-24 bg-gradient-to-r from-gold/10 to-[#E0F7FA]/10 border-y border-gold/30">
           <div className="container">
             <div className="max-w-3xl mx-auto">
               <h2 className="text-4xl md:text-5xl font-playfair font-bold text-cream mb-8 text-center">
@@ -238,7 +238,7 @@ export default function Services() {
             </p>
             <Link href="/contact">
               <a>
-                <Button className="bg-gold text-charcoal hover:bg-blue-ethereal px-10 py-6 text-lg font-poppins font-600 rounded-lg transition-all duration-300 shadow-glow">
+                <Button className="bg-gold text-charcoal hover:bg-[#E0F7FA] px-10 py-6 text-lg font-poppins font-600 rounded-lg transition-all duration-300 shadow-glow">
                   Schedule a Consultation
                   <ArrowRight size={20} className="ml-2" />
                 </Button>

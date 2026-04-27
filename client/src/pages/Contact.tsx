@@ -107,15 +107,15 @@ export default function Contact() {
                 <a
                   key={idx}
                   href={info.link}
-                  className="group p-8 rounded-lg bg-gradient-to-br from-gold/10 to-blue-ethereal/10 border border-gold/30 hover:border-gold/60 transition-all duration-300 hover:shadow-glow text-center"
+                  className="group p-8 rounded-lg bg-gradient-to-br from-gold/10 to-[#E0F7FA]/10 border border-gold/30 hover:border-gold/60 transition-all duration-300 hover:shadow-glow text-center"
                 >
-                  <div className="flex justify-center mb-4 text-gold group-hover:text-blue-ethereal transition-colors">
+                  <div className="flex justify-center mb-4 text-gold group-hover:text-[#E0F7FA] transition-colors">
                     {info.icon}
                   </div>
                   <h3 className="text-xl font-playfair font-bold text-cream mb-2">
                     {info.title}
                   </h3>
-                  <p className="text-gold group-hover:text-blue-ethereal transition-colors">
+                  <p className="text-gold group-hover:text-[#E0F7FA] transition-colors">
                     {info.value}
                   </p>
                 </a>
@@ -124,7 +124,7 @@ export default function Contact() {
 
             {/* Contact Form */}
             <div className="max-w-2xl mx-auto">
-              <div className="p-8 rounded-lg bg-gradient-to-br from-gold/10 to-blue-ethereal/10 border border-gold/30">
+              <div className="p-8 rounded-lg bg-gradient-to-br from-gold/10 to-[#E0F7FA]/10 border border-gold/30">
                 <h2 className="text-3xl font-playfair font-bold text-cream mb-8 text-center">
                   Send us a Message
                 </h2>
@@ -234,7 +234,7 @@ export default function Contact() {
                   <Button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full bg-gold text-charcoal hover:bg-blue-ethereal disabled:opacity-50 px-6 py-4 text-lg font-poppins font-600 rounded-lg transition-all duration-300 shadow-glow flex items-center justify-center gap-2"
+                    className="w-full bg-gold text-charcoal hover:bg-[#E0F7FA] disabled:opacity-50 px-6 py-4 text-lg font-poppins font-600 rounded-lg transition-all duration-300 shadow-glow flex items-center justify-center gap-2"
                   >
                     {isSubmitting ? "Sending..." : "Send Message"}
                     <Send size={18} />
@@ -250,7 +250,7 @@ export default function Contact() {
         </section>
 
         {/* Additional Info */}
-        <section className="py-24 bg-gradient-to-r from-gold/10 to-blue-ethereal/10 border-y border-gold/30">
+        <section className="py-24 bg-gradient-to-r from-gold/10 to-[#E0F7FA]/10 border-y border-gold/30">
           <div className="container">
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-4xl md:text-5xl font-playfair font-bold text-cream mb-8">

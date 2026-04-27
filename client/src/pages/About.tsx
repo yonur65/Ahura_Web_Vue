@@ -129,7 +129,7 @@ export default function About() {
         </section>
 
         {/* Our Philosophy */}
-        <section className="py-24 bg-gradient-to-r from-gold/10 to-blue-ethereal/10 border-y border-gold/30">
+        <section className="py-24 bg-gradient-to-r from-gold/10 to-[#E0F7FA]/10 border-y border-gold/30">
           <div className="container">
             <h2 className="text-4xl md:text-5xl font-playfair font-bold text-cream mb-16 text-center">
               Our <span className="text-gold">Philosophy</span>
@@ -163,10 +163,10 @@ export default function About() {
               {team.map((member, idx) => (
                 <div
                   key={idx}
-                  className="group rounded-lg overflow-hidden bg-gradient-to-br from-gold/10 to-blue-ethereal/10 border border-gold/30 hover:border-gold/60 transition-all duration-300 hover:shadow-glow"
+                  className="group rounded-lg overflow-hidden bg-gradient-to-br from-gold/10 to-[#E0F7FA]/10 border border-gold/30 hover:border-gold/60 transition-all duration-300 hover:shadow-glow"
                 >
                   {/* Avatar */}
-                  <div className="h-40 bg-gradient-to-br from-gold to-blue-ethereal flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+                  <div className="h-40 bg-gradient-to-br from-gold to-[#E0F7FA] flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
                     <div className="w-24 h-24 rounded-full bg-charcoal flex items-center justify-center">
                       <span className="text-3xl font-playfair font-bold text-gold">
                         {member.name.charAt(0)}
@@ -191,7 +191,7 @@ export default function About() {
         </section>
 
         {/* Mission & Vision */}
-        <section className="py-24 bg-gradient-to-r from-gold/10 to-blue-ethereal/10 border-y border-gold/30">
+        <section className="py-24 bg-gradient-to-r from-gold/10 to-[#E0F7FA]/10 border-y border-gold/30">
           <div className="container">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               {/* Mission */}
@@ -245,7 +245,7 @@ export default function About() {
 
               <Link href="/contact">
                 <a>
-                  <Button className="bg-gold text-charcoal hover:bg-blue-ethereal px-10 py-6 text-lg font-poppins font-600 rounded-lg transition-all duration-300 shadow-glow">
+                  <Button className="bg-gold text-charcoal hover:bg-[#E0F7FA] px-10 py-6 text-lg font-poppins font-600 rounded-lg transition-all duration-300 shadow-glow">
                     Join Our Mission
                     <ArrowRight size={20} className="ml-2" />
                   </Button>

@@ -25,10 +25,10 @@ export function Header() {
         {/* Logo */}
         <Link href="/">
           <a className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-gold to-blue-ethereal flex items-center justify-center shadow-glow group-hover:shadow-lg transition-all duration-300">
+            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-gold to-[#E0F7FA] flex items-center justify-center shadow-glow group-hover:shadow-lg transition-all duration-300">
               <span className="text-charcoal font-playfair font-bold text-lg">Ⓐ</span>
             </div>
-            <span className="hidden sm:inline font-playfair font-bold text-xl text-gold group-hover:text-blue-ethereal transition-colors duration-300">
+            <span className="hidden sm:inline font-playfair font-bold text-xl text-gold group-hover:text-[#E0F7FA] transition-colors duration-300">
               Ahura Mind
             </span>
           </a>
@@ -49,7 +49,7 @@ export function Header() {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden text-gold hover:text-blue-ethereal transition-colors p-2"
+          className="md:hidden text-gold hover:text-[#E0F7FA] transition-colors p-2"
           aria-label="Toggle menu"
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -87,7 +87,7 @@ export function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-blue-ethereal flex items-center justify-center">
+              <div className="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-[#E0F7FA] flex items-center justify-center">
                 <span className="text-charcoal font-playfair font-bold text-sm">Ⓐ</span>
               </div>
               <span className="font-playfair font-bold text-gold">Ahura Mind</span>
