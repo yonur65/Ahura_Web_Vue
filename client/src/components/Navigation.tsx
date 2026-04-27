@@ -25,9 +25,7 @@ export function Header() {
         {/* Logo */}
         <Link href="/">
           <a className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-gold to-[#E0F7FA] flex items-center justify-center shadow-glow group-hover:shadow-lg transition-all duration-300">
-              <span className="text-charcoal font-playfair font-bold text-lg">Ⓐ</span>
-            </div>
+            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663584892871/ZnAqy5JpaRSEVuhK7B2pkN/ahura-mind-logo-Fy3pG96WE4LxBYVGCf4BhQ.webp" alt="Ahura Mind" className="w-10 h-10 group-hover:drop-shadow-lg transition-all duration-300" />
             <span className="hidden sm:inline font-playfair font-bold text-xl text-gold group-hover:text-[#E0F7FA] transition-colors duration-300">
               Ahura Mind
             </span>
@@ -87,9 +85,7 @@ export function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-[#E0F7FA] flex items-center justify-center">
-                <span className="text-charcoal font-playfair font-bold text-sm">Ⓐ</span>
-              </div>
+              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663584892871/ZnAqy5JpaRSEVuhK7B2pkN/ahura-mind-logo-Fy3pG96WE4LxBYVGCf4BhQ.webp" alt="Ahura Mind" className="w-8 h-8" />
               <span className="font-playfair font-bold text-gold">Ahura Mind</span>
             </div>
             <p className="text-cream/70 text-sm leading-relaxed">
@@ -145,8 +141,8 @@ export function Footer() {
           <div>
             <h4 className="font-playfair font-bold text-gold mb-4">Contact</h4>
             <ul className="space-y-2 text-cream/70 text-sm">
-              <li>Email: info@ahuramind.com</li>
-              <li>Phone: +1 747 327 80 61</li>
+              <li><a href="mailto:info@ahuramind.com" className="hover:text-gold transition-colors">Email: info@ahuramind.com</a></li>
+              <li><a href="tel:+17473278061" className="hover:text-gold transition-colors">Phone: +1 747 327 80 61</a></li>
               <li>Location: United States</li>
             </ul>
           </div>
@@ -159,9 +155,15 @@ export function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center text-cream/50 text-sm">
           <p>&copy; {currentYear} Ahura Mind. All rights reserved.</p>
           <div className="flex gap-6 mt-4 md:mt-0">
-            <a href="#" className="hover:text-gold transition-colors">Privacy</a>
-            <a href="#" className="hover:text-gold transition-colors">Terms</a>
-            <a href="#" className="hover:text-gold transition-colors">Cookies</a>
+            <Link href="/privacy">
+              <a className="hover:text-gold transition-colors">Privacy</a>
+            </Link>
+            <Link href="/terms">
+              <a className="hover:text-gold transition-colors">Terms</a>
+            </Link>
+            <Link href="/cookies">
+              <a className="hover:text-gold transition-colors">Cookies</a>
+            </Link>
           </div>
         </div>
       </div>
