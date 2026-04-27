@@ -167,7 +167,7 @@
   }
   
   .glow-blue {
-    @apply text-blue-ethereal drop-shadow-lg;
+    color: #E0F7FA;
     text-shadow: 0 0 20px rgba(224, 247, 250, 0.3);
   }
   
@@ -249,9 +249,7 @@
     color: #121212;
   }
   
-  .text-blue-ethereal {
-    color: #E0F7FA;
-  }
+
   
   .bg-gold {
     background-color: #D4AF37;
@@ -302,9 +300,7 @@
     color: #D4AF37;
   }
   
-  .hover\:text-blue-ethereal:hover {
-    color: #E0F7FA;
-  }
+
   
   .hover\:bg-gold:hover {
     background-color: #D4AF37;
@@ -386,9 +382,7 @@
   .stagger-4 { animation-delay: 0.4s; }
   .stagger-5 { animation-delay: 0.5s; }
   
-  .group-hover\:text-blue-ethereal:group-hover {
-    color: #E0F7FA;
-  }
+
   
   .group-hover\:text-gold:group-hover {
     color: #D4AF37;
